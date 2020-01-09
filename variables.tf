@@ -39,6 +39,12 @@ variable "default_target_group_enabled" {
   description = "Enable/disable creation of the default target group"
 }
 
+variable "default_target_group_depends_on" {
+  type        = any
+  default     = []
+  description = "List of dependencies for default target group"
+}
+
 variable "target_group_arn" {
   type        = string
   default     = ""

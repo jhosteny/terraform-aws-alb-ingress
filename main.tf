@@ -46,6 +46,10 @@ resource "aws_lb_target_group" "default" {
     interval            = var.health_check_interval
     matcher             = var.health_check_matcher
   }
+
+  depends_on = [
+    var.default_target_group_depends_on,
+  ]
 }
 
 resource "aws_lb_listener_rule" "unauthenticated_paths" {

@@ -18,6 +18,7 @@
 | authentication_oidc_token_endpoint | OIDC Token Endpoint | string | `` | no |
 | authentication_oidc_user_info_endpoint | OIDC User Info Endpoint | string | `` | no |
 | authentication_type | Authentication type. Supported values are `COGNITO` and `OIDC` | string | `` | no |
+| default_target_group_depends_on | List of dependencies for default target group | any | `<list>` | no |
 | default_target_group_enabled | Enable/disable creation of the default target group | bool | `true` | no |
 | delimiter | Delimiter between `namespace`, `stage`, `name` and `attributes` | string | `-` | no |
 | deregistration_delay | The amount of time to wait in seconds while deregistering target | number | `15` | no |
